@@ -7,9 +7,10 @@ footer {
 
 footer .footer > div {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1800px;
   padding: 40px 24px 24px;
-    border-top: 2px solid #000;
+  border-top: 1px solid #dedede;
+  box-sizing: border-box;
 }
 
 footer .footer p {
@@ -41,19 +42,17 @@ footer .footer .section:nth-of-type(1) .default-content-wrapper > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 1em 10em;
 }
 
 footer .footer .section:nth-of-type(1) .default-content-wrapper ul > li {
   max-width: 220px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 footer .footer .section:nth-of-type(1) .default-content-wrapper ul > li p {
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 1px solid #000;
 }
 
 footer .footer .section:nth-of-type(1) .default-content-wrapper ul > li > ul > li {
