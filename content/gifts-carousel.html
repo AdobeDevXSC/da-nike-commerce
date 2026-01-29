@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta
+  http-equiv="Content-Security-Policy"
+  content="script-src 'nonce-aem' 'strict-dynamic' 'unsafe-inline' http: https:; base-uri 'self'; object-src 'none';"
+  move-to-http-header="true"
+>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script nonce="aem" type="speculationrules">
+    {
+        "prerender": [{
+            "where": {
+                "href_matches": "/*"
+            },
+            "eagerness": "moderate"
+        }]
+    }
+</script>
+<script nonce="aem" type="importmap">
+    {
+        "imports": {
+            "@dropins/storefront-account/": "/scripts/__dropins__/storefront-account/",
+            "@dropins/storefront-auth/": "/scripts/__dropins__/storefront-auth/",
+            "@dropins/storefront-cart/": "/scripts/__dropins__/storefront-cart/",
+            "@dropins/storefront-checkout/": "/scripts/__dropins__/storefront-checkout/",
+            "@dropins/storefront-order/": "/scripts/__dropins__/storefront-order/",
+            "@dropins/storefront-payment-services/": "/scripts/__dropins__/storefront-payment-services/",
+            "@dropins/storefront-pdp/": "/scripts/__dropins__/storefront-pdp/",
+            "@dropins/storefront-recommendations/": "/scripts/__dropins__/storefront-recommendations/",
+            "@dropins/storefront-wishlist/": "/scripts/__dropins__/storefront-wishlist/",
+            "@dropins/storefront-personalization/": "/scripts/__dropins__/storefront-personalization/",
+            "@dropins/storefront-product-discovery/": "/scripts/__dropins__/storefront-product-discovery/",
+            "@dropins/tools/": "/scripts/__dropins__/tools/"
+        }
+    }
+</script>
+
+<link rel="stylesheet" href="/styles/styles.css" />
+
+<script nonce="aem" type="module">
+    if (!(HTMLScriptElement.supports?.('importmap'))) {
+        import('/scripts/__dropins__/tools/shims/importmap.js');
+    }
+</script>
+
+<script nonce="aem" src="/scripts/aem-embed.js" type="module"></script>
+<script nonce="aem" src="/scripts/aem.js" type="module"></script>
+<script nonce="aem" src="/scripts/scripts.js" type="module"></script>
+<script nonce="aem" src="/scripts/commerce.js" type="module"></script>
+
+<link rel="modulepreload" href="/scripts/__dropins__/tools/lib/aem/configs.js" />
+<link rel="modulepreload" href="/scripts/initializers/index.js" />
+<link rel="modulepreload" href="/scripts/initializers/auth.js" />
+<link rel="modulepreload" href="/scripts/initializers/personalization.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/storefront-auth/api.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/event-bus.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/fetch-graphql.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/initializer.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/preact.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/preact-compat.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/preact-hooks.js" />
+<link rel="modulepreload" href="/scripts/__dropins__/tools/components.js" />
+</head>
+<body>
+<header></header>
+<main>
+<div><!-- source: https://www.figma.com/design/kafhlyYFNmkTUwD1UqGVgR/Signet-Jewelers-%E2%80%94%C2%A0External-Adobe?node-id=19389-41905 -->
+<div class="section-metadata"><div><div>full-width</div><div>true</div></div></div>
+<div class="carousel-gifts"><div><div><p>For Him  For Her</p><h2 id="gifts-that-mean-more">Gifts That Mean More</h2><p>From timeless classics to personalized treasures, discover gifts that sparkle with meaning for every style and story.</p><p><a href="#">Explore Gift Guide</a></p></div></div><div><div><picture><source srcset="./images/gifts-carousel/storied-diamond.png"><source srcset="./images/gifts-carousel/storied-diamond.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/storied-diamond.png" alt="Storied Diamond Desert Sands of Eternity" loading="lazy"></picture></div><div>Storied Diamond Desert Sands of Eternity™</div></div><div><div><picture><source srcset="./images/gifts-carousel/diamond-gifts.png"><source srcset="./images/gifts-carousel/diamond-gifts.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/diamond-gifts.png" alt="Diamond Gifts" loading="lazy"></picture></div><div>Diamond Gifts</div></div><div><div><picture><source srcset="./images/gifts-carousel/gold-gifts.png"><source srcset="./images/gifts-carousel/gold-gifts.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/gold-gifts.png" alt="14-18k Gold Gifts" loading="lazy"></picture></div><div>14-18k Gold Gifts</div></div><div><div><picture><source srcset="./images/gifts-carousel/gemstone-gifts.png"><source srcset="./images/gifts-carousel/gemstone-gifts.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/gemstone-gifts.png" alt="Gemstone Gifts" loading="lazy"></picture></div><div>Gemstone Gifts</div></div><div><div><picture><source srcset="./images/gifts-carousel/silver-christmas.png"><source srcset="./images/gifts-carousel/silver-christmas.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/silver-christmas.png" alt="Silver Christmas Gifts" loading="lazy"></picture></div><div>Silver Christmas Gifts</div></div><div><div><picture><source srcset="./images/gifts-carousel/unspoken-collection.png"><source srcset="./images/gifts-carousel/unspoken-collection.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/unspoken-collection.png" alt="Unspoken Collection" loading="lazy"></picture></div><div>Unspoken Collection</div></div><div><div><picture><source srcset="./images/gifts-carousel/le-vian.png"><source srcset="./images/gifts-carousel/le-vian.png" media="(min-width: 600px)"><img src="./images/gifts-carousel/le-vian.png" alt="Le Vian" loading="lazy"></picture></div><div>Le Vian®</div></div></div></div>
+</main>
+<footer></footer>
+</body>
+</html>

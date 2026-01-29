@@ -1,0 +1,15 @@
+.*
+*.md
+*.d.ts
+*.map
+karma.config.js
+LICENSE
+package.json
+package-lock.json
+test/*
+postinstall.js
+build.mjs
+cypress/
+tools/picker/src/*
+tools/pdp-metadata/*
+plugins/experimentation/documentation/images/*

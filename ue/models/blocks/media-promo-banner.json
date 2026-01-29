@@ -1,0 +1,49 @@
+{
+  "definitions": [
+    {
+      "title": "Media Promo Banner",
+      "id": "media-promo-banner",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"media-promo-banner\"><div><div><p><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></p><h3 id=\"title\">Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><a href=\"#\" title=\"CTA Button\">CTA Button</a></p></div></div></div>"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "media-promo-banner",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+          "label": "Alt",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(2)",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "div:nth-child(3)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]",
+          "value": "",
+          "label": "URL Link",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

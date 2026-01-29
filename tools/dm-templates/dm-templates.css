@@ -1,0 +1,96 @@
+.da-group-title-text {
+  position: relative;
+  margin: 0px;
+  padding: 0px 14px;
+  /* Remove width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  background: none;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+:host ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  margin: 0px;
+  padding: 10px;
+}
+.da-group-button {
+  position: relative;
+  margin: 0px;
+  padding: 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  /* Stack image above title row */
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  background: #f5f5f5;
+  border: none;
+  transition: background-color .2s ease-in-out;
+}
+
+.da-group-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;  /* Or flex-start if you want left-aligned */
+}
+
+:host button {
+  cursor: pointer;
+}
+
+.da-group-button img.edit {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.da-group-button img.fullscreen {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  object-fit: cover;
+}
+
+.open-link {
+  display: inline-flex;
+  align-items: center;
+  /* margin-left: 8px; */
+  color: #464646;
+  text-decoration: none;
+}
+
+.open-link:hover {
+  color: #1473e6;
+}
+
+.open-icon {
+  flex-shrink: 0;
+}
+
+.preview-all-link {
+  display: block;
+  padding: 12px 14px;
+  color: #1473e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.preview-all-link:hover {
+  text-decoration: underline;
+}
+

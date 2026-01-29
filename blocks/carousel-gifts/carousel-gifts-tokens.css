@@ -1,0 +1,78 @@
+/* Carousel Gifts - Component-Specific Design Tokens */
+
+.carousel-gifts {
+  /* Layout */
+  --carousel-gifts-min-height: 610px;
+  --carousel-gifts-intro-width: 316px;
+  --carousel-gifts-intro-gap: 19px;
+  --carousel-gifts-slides-gap: 8px;
+  --carousel-gifts-slide-width: 344px;
+
+  /* Colors - Primary Brand */
+  --carousel-gifts-primary-color: #083a39;
+  --carousel-gifts-primary-color-muted: rgba(8, 58, 57, 0.4);
+  --carousel-gifts-text-color: #494949;
+  --carousel-gifts-white: #fff;
+  --carousel-gifts-overlay-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 70.449%);
+
+  /* Typography - Heading */
+  --carousel-gifts-heading-font-family: 'Libre Bodoni', serif;
+  --carousel-gifts-heading-font-size: 24px;
+  --carousel-gifts-heading-font-weight: 400;
+  --carousel-gifts-heading-line-height: 1.3;
+  --carousel-gifts-heading-letter-spacing: -0.48px;
+  --carousel-gifts-heading-color: var(--carousel-gifts-primary-color);
+
+  /* Typography - Description */
+  --carousel-gifts-description-font-family: 'Outfit', sans-serif;
+  --carousel-gifts-description-font-size: 14px;
+  --carousel-gifts-description-font-weight: 400;
+  --carousel-gifts-description-line-height: normal;
+  --carousel-gifts-description-color: var(--carousel-gifts-primary-color);
+
+  /* Typography - Badge/Tab */
+  --carousel-gifts-badge-font-family: 'Outfit', sans-serif;
+  --carousel-gifts-badge-font-size: 11px;
+  --carousel-gifts-badge-font-weight: 400;
+  --carousel-gifts-badge-line-height: 1;
+  --carousel-gifts-badge-text-transform: uppercase;
+  --carousel-gifts-badge-active-color: var(--carousel-gifts-primary-color);
+  --carousel-gifts-badge-inactive-color: var(--carousel-gifts-primary-color-muted);
+
+  /* Typography - Tile Label */
+  --carousel-gifts-tile-label-font-family: 'Outfit', sans-serif;
+  --carousel-gifts-tile-label-font-size: 16px;
+  --carousel-gifts-tile-label-font-weight: 400;
+  --carousel-gifts-tile-label-line-height: 1.3;
+  --carousel-gifts-tile-label-letter-spacing: -0.16px;
+  --carousel-gifts-tile-label-color: var(--carousel-gifts-white);
+
+  /* Button */
+  --carousel-gifts-button-bg: var(--carousel-gifts-primary-color);
+  --carousel-gifts-button-text-color: var(--carousel-gifts-white);
+  --carousel-gifts-button-font-family: 'Outfit', sans-serif;
+  --carousel-gifts-button-font-size: 10px;
+  --carousel-gifts-button-font-weight: 500;
+  --carousel-gifts-button-text-transform: uppercase;
+  --carousel-gifts-button-letter-spacing: 0.1px;
+  --carousel-gifts-button-height: 36px;
+  --carousel-gifts-button-padding-x: 16px;
+  --carousel-gifts-button-border-radius: 2px;
+
+  /* Navigation Buttons */
+  --carousel-gifts-nav-button-size: 16px;
+  --carousel-gifts-nav-button-bg: #f5f5f5;
+  --carousel-gifts-nav-button-border-radius: 2px;
+  --carousel-gifts-nav-button-gap: 4px;
+  --carousel-gifts-nav-arrow-color: #000;
+
+  /* Tile Arrow */
+  --carousel-gifts-tile-arrow-size: 16px;
+  --carousel-gifts-tile-arrow-color: var(--carousel-gifts-white);
+
+  /* Spacing */
+  --carousel-gifts-tile-padding: 20px 24px;
+  --carousel-gifts-intro-left: 21px;
+  --carousel-gifts-slides-left: 372px;
+  --carousel-gifts-slides-right-padding: 20px;
+}
