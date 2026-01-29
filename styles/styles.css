@@ -88,7 +88,7 @@
   --spacing-huge: 120px;
   --spacing-xhuge: 144px;
   --spacing-xxhuge: 192px;
-  --type-base-font-family: adobe-clean, roboto, roboto-fallback, system-ui, sans-serif;
+  --type-base-font-family: HelveticaNowText, adobe-clean, roboto, roboto-fallback, system-ui, sans-serif;
   --type-display-1-font: normal normal 300 6rem/7.2rem var(--type-base-font-family);
   --type-display-1-letter-spacing: 0.04em;
   --type-display-2-font: normal normal 300 4.8rem/5.6rem var(--type-base-font-family);
@@ -216,18 +216,21 @@ h6 {
 }
 
 h1 {
-  font: var(--type-display-1-font);
+  font-family: Nike-Futura;
   letter-spacing: var(--type-display-1-letter-spacing);
+  font-size: 96px;
 }
 
 h2 {
-  font: var(--type-display-2-font);
+  font-family: Nike-Futura;
   letter-spacing: var(--type-display-2-letter-spacing);
+  font-size: 76px;
 }
 
 h3 {
-  font: var(--type-display-3-font);
+  font-family: Nike-Futura;
   letter-spacing: var(--type-display-3-letter-spacing);
+  font-size: 56px;
 }
 
 h4 {
@@ -245,6 +248,20 @@ h6 {
   letter-spacing: var(--type-headline-2-default-letter-spacing);
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 76px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+}
+
 p,
 dl,
 ol,
@@ -253,6 +270,7 @@ pre,
 blockquote {
   margin-top: 1.5625em;
   margin-bottom: 1.5625em;
+  letter-spacing: 0;
 }
 
 hr {
@@ -317,9 +335,9 @@ button.button {
   border-radius: 0;
   padding: 0;
   font: var(--type-button-2-font);
-  letter-spacing: var(--type-button-2-letter-spacing);
+  letter-spacing: 0;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
@@ -329,7 +347,7 @@ button.button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 main a.button:hover,
@@ -349,12 +367,12 @@ button.button:disabled:hover {
 
 main a.button.primary,
 button.button.primary {
-  border-radius: 0;
-  padding: 1em 1.25em;
+  border-radius: 30px;
+  padding: 7px 14px;
   background: #fff;
   color: #000 !important;
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
 }
 
 main a.button.primary:hover,
