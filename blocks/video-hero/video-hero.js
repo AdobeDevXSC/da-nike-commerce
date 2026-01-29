@@ -168,6 +168,9 @@ function setupTransparentHeader(block) {
 }
 
 export default function decorate(block) {
+  console.log("BAP TO THE BAP BAP, TESTING ****************************")
+
+
   // Extract content from authored block
   const content = extractContent(block);
 

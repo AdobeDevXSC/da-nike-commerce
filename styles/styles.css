@@ -127,7 +127,7 @@
   /* Additional tokens */
   --type-fixed-font-family: adobe-clean, "Roboto Mono", menlo, consolas, "Liberation Mono", monospace, system-ui, sans-serif;
   --background-color: var(--color-neutral-50);
-  --nav-height: 6.4rem;
+  --nav-height: 6rem;
   --brand-primary-color: #083a39;
 
   /* Nike-style Hero Tokens */
@@ -176,7 +176,7 @@ body:not(.appear) {
 
 header {
   grid-row: 1;
-  height: 6.4rem;
+  height: 6rem;
 }
 
 @media (min-width: 900px) {

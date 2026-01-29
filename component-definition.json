@@ -226,6 +226,17 @@
           }
         },
         {
+          "title": "Video Hero",
+          "id": "video-hero",
+          "plugins": {
+            "da": {
+              "name": "video-hero",
+              "rows": 1,
+              "columns": 1
+            }
+          }
+        },
+        {
           "title": "Video",
           "id": "video",
           "plugins": {

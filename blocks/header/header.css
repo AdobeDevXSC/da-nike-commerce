@@ -12,7 +12,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 3;
   position: fixed;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 
 header nav {
@@ -44,7 +44,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1800px;
+    max-width: 1860px;
     padding: 0 32px;
   }
 
@@ -162,7 +162,7 @@ li.nav-drop img {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 65px;
   height: auto;
   margin-bottom: -7px;
 }
@@ -228,7 +228,8 @@ header nav .nav-sections ul > li:empty {
   header nav .nav-sections .default-content-wrapper > ul > li,
   header nav .nav-sections .nav-drop {
     border-radius: 4px;
-    padding: 0 var(--spacing-small);
+    padding: 0 var(--spacing-xsmall);
+    font-size: 16px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li a {
@@ -339,7 +340,7 @@ header nav .nav-tools {
   grid-area: tools;
   display: flex;
   height: 100%;
-  gap: var(--spacing-small);
+  gap: var(--spacing-xsmall);
   align-items: center;
   background: var(--background-color);
   z-index: 3;

@@ -55,7 +55,8 @@
         "tabs",
         "table",
         "text",
-        "video"
+        "video",
+        "video-hero"
       ]
     }
   ]
