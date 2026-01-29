@@ -35,7 +35,7 @@ video video {
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  max-height: 725px;
+  max-height: 750px;
   object-fit: cover;
   aspect-ratio: auto;
 }
@@ -148,36 +148,25 @@ video video {
   align-items: center;
 }
 
-/* Category label - small uppercase text */
-.video .video-text-wrapper > div > p:first-of-type {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 0 0 0.5rem;
-  opacity: 0.9;
-}
 
 /* Main headline */
 .video .video-text-wrapper > div > h1,
 .video .video-text-wrapper > div > h2,
 .video .video-text-wrapper > div > h3 {
-  font-size: clamp(32px, 8vw, 64px);
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 0.75rem;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01rem;
 }
 
 /* Subheadline / description */
 .video .video-text-wrapper > div > p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
-  margin: 0 0 1.5rem;
-  opacity: 0.9;
-  max-width: 480px;
+  line-height: 1;
+  margin: 5px 0;
+  padding: 2px 0;
 }
 
 .video .video-text-wrapper a {
@@ -192,7 +181,7 @@ video video {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
 }
 
 /* Nike-style Pill Buttons */
@@ -204,13 +193,11 @@ video video {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.5rem;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.2s ease;
-  min-width: 120px;
   margin: 0;
 }
 
@@ -248,18 +235,8 @@ video video {
     padding: 3rem 3rem 5rem;
   }
 
-  .video .video-text-wrapper > div > p:first-of-type {
-    font-size: 14px;
-  }
-
-  .video .video-text-wrapper > div > p {
-    font-size: 18px;
-  }
-
   .video .video-button-container a.button {
-    padding: 1rem 2rem;
     font-size: 16px;
-    min-width: 140px;
   }
 }
 
@@ -270,7 +247,7 @@ video video {
   }
 
   .video .video-text-wrapper > div {
-    max-width: 700px;
+    max-width: 1200px;
   }
 
   .video .video-button-container {
