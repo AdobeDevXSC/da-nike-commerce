@@ -1,3 +1,4 @@
+/* Nike-style Video Hero Block */
 
 .video-container {
   display: block;
@@ -9,7 +10,7 @@
 }
 
 .video-container .video-wrapper .video {
-  text-align: left;
+  text-align: center;
   width: 100%;
   max-width: initial;
   margin: auto;
@@ -18,8 +19,8 @@
 }
 
 .video[data-embed-loaded='false']:not(.placeholder) {
-  /* reserve an approximate space to avoid extensive layout shifts */
-  aspect-ratio: 16 / 9;
+  /* Reserve space for viewport-height hero */
+  min-height: 100vh;
 }
 
 .video > div {
@@ -27,19 +28,37 @@
   justify-content: center;
 }
 
-video, video video {
+/* Full-viewport video styling */
+video,
+video video {
   display: block;
-  width: 100dvw;
-  max-width: 100%;
-  height: 100dvh;
-  max-height: 1000px;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 100vh;
   object-fit: cover;
   aspect-ratio: auto;
 }
 
+/* Subtle gradient overlay for text readability */
+.video::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%) 0%,
+    rgb(0 0 0 / 10%) 50%,
+    rgb(0 0 0 / 40%) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
 .video .video-placeholder {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100vh;
+  min-height: 600px;
   position: relative;
 }
 
@@ -67,11 +86,19 @@ video, video video {
 .video .video-placeholder-play button {
   position: relative;
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  outline: 2px solid;
+  border: 2px solid #fff;
+  background: rgb(0 0 0 / 40%);
   padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.video .video-placeholder-play button:hover {
+  transform: scale(1.1);
+  background: rgb(0 0 0 / 60%);
 }
 
 .video .video-placeholder-play button::before {
@@ -83,12 +110,11 @@ video, video video {
   height: 24px;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-left: 18px solid;
+  border-left: 18px solid #fff;
   top: 50%;
-  left: calc(50% + 2px);
+  left: calc(50% + 3px);
   transform: translate(-50%, -50%);
 }
-
 
 .video-container > div:nth-child(1) {
   flex: 1;
@@ -98,50 +124,156 @@ video, video video {
   flex: 1;
 }
 
-.video-container h1::after,
-.video-container h2::after, 
-.video-container h3::after,
-.video-container h4::after {
-  border-bottom: 2px solid #17b677;
-}
-
-
+/* Nike-style Text Overlay */
 .video .video-text-wrapper {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  transform: translateY(-50%);
   color: #fff;
   z-index: 2;
-  padding: 2rem;
+  padding: 2rem 1.5rem 4rem;
   box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.video .video-text-wrapper > div > h1 {
-  font-size: 44px;
-  margin-top: 1rem;
+.video .video-text-wrapper > div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Category label - small uppercase text */
+.video .video-text-wrapper > div > p:first-of-type {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.5rem;
+  opacity: 0.9;
+}
+
+/* Main headline */
+.video .video-text-wrapper > div > h1,
+.video .video-text-wrapper > div > h2,
+.video .video-text-wrapper > div > h3 {
+  font-size: clamp(32px, 8vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* Subheadline / description */
 .video .video-text-wrapper > div > p {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+  opacity: 0.9;
+  max-width: 480px;
 }
 
 .video .video-text-wrapper a {
   color: inherit;
+  text-decoration: none;
 }
 
+/* Nike-style Button Container */
 .video .video-button-container {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
-@media (width > 900px) {
+/* Nike-style Pill Buttons */
+.video .video-button-container .button-container {
+  margin: 0;
+}
+
+.video .video-button-container a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  margin: 0;
+}
+
+/* Primary button - white background */
+.video .video-button-container a.button.primary,
+.video .video-button-container a.button:first-child {
+  background: #fff;
+  color: #111 !important;
+  border: none;
+}
+
+.video .video-button-container a.button.primary:hover,
+.video .video-button-container a.button:first-child:hover {
+  background: #f5f5f5;
+  transform: scale(1.02);
+}
+
+/* Secondary button - transparent with border */
+.video .video-button-container a.button.secondary,
+.video .video-button-container a.button:not(:first-child) {
+  background: transparent;
+  color: #fff !important;
+  border: 1.5px solid rgb(255 255 255 / 60%);
+}
+
+.video .video-button-container a.button.secondary:hover,
+.video .video-button-container a.button:not(:first-child):hover {
+  border-color: #fff;
+  background: rgb(255 255 255 / 10%);
+}
+
+/* Tablet+ styles */
+@media (width >= 768px) {
   .video .video-text-wrapper {
-    padding: 0 5rem;
-    max-width: 500px;
+    padding: 3rem 3rem 5rem;
+  }
+
+  .video .video-text-wrapper > div > p:first-of-type {
+    font-size: 14px;
+  }
+
+  .video .video-text-wrapper > div > p {
+    font-size: 18px;
+  }
+
+  .video .video-button-container a.button {
+    padding: 1rem 2rem;
+    font-size: 16px;
+    min-width: 140px;
+  }
+}
+
+/* Desktop styles */
+@media (width >= 1024px) {
+  .video .video-text-wrapper {
+    padding: 4rem 4rem 6rem;
+  }
+
+  .video .video-text-wrapper > div {
+    max-width: 700px;
+  }
+
+  .video .video-button-container {
+    gap: 1rem;
   }
 }

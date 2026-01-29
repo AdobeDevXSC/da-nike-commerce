@@ -1,11 +1,11 @@
 {
   "public": {
     "default": {
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/FG9HiUc9tzWE1V1ueDfxrH/graphql",
+      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/NZwP3wKPFXBCTLGqxYWZne/graphql",
       "headers": {
         "cs": {
-          "AC-View-ID": "a42f6884-91ab-43f8-b238-0fff7ef8a504",
-          "AC-Price-Book-ID": "kay_regular",
+          "AC-View-ID": "426ffe32-e0a9-4c53-8ec9-3f7118cbf6b2",
+          "AC-Price-Book-ID": "wknd_global",
           "AC-Source-Locale": "en-US"
         }
       },

@@ -129,6 +129,18 @@
   --background-color: var(--color-neutral-50);
   --nav-height: 6.4rem;
   --brand-primary-color: #083a39;
+
+  /* Nike-style Hero Tokens */
+  --hero-text-color: #fff;
+  --hero-gradient-start: rgb(0 0 0 / 0%);
+  --hero-gradient-end: rgb(0 0 0 / 40%);
+  --button-radius-pill: 30px;
+  --button-primary-bg: #fff;
+  --button-primary-color: #111;
+  --button-primary-hover-bg: #f5f5f5;
+  --button-secondary-border: rgb(255 255 255 / 60%);
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
 }
 
 /* fallback font */
@@ -363,6 +375,55 @@ button.button.secondary:hover {
   color: var(--color-brand-600);
 }
 
+/* Nike-style Pill Buttons */
+main a.button.pill,
+button.button.pill {
+  border-radius: var(--button-radius-pill);
+  padding: 0.875rem 1.75rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+main a.button.pill.primary,
+button.button.pill.primary {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-color) !important;
+  border: none;
+}
+
+main a.button.pill.primary:hover,
+button.button.pill.primary:hover {
+  background: var(--button-primary-hover-bg);
+  transform: scale(1.02);
+}
+
+main a.button.pill.dark,
+button.button.pill.dark {
+  background: #111;
+  color: #fff !important;
+  border: none;
+}
+
+main a.button.pill.dark:hover,
+button.button.pill.dark:hover {
+  background: #000;
+  transform: scale(1.02);
+}
+
+main a.button.pill.outline,
+button.button.pill.outline {
+  background: transparent;
+  color: #111 !important;
+  border: 1.5px solid #111;
+}
+
+main a.button.pill.outline:hover,
+button.button.pill.outline:hover {
+  background: rgb(0 0 0 / 5%);
+}
+
 main input:hover {
   border: var(--shape-border-width-1) solid var(--color-neutral-700);
 }
@@ -438,6 +499,27 @@ main .section.highlight {
 main .section[data-full-width="true"] > div {
   max-width: 100%;
   padding: 0;
+}
+
+/* Nike-style Hero Section - for video/image heroes */
+main .section.hero-full {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.hero-full > div {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Remove margin for first section when it's a hero */
+main > .section:first-of-type.hero-full {
+  margin-top: calc(-1 * var(--nav-height));
+}
+
+/* Ensure video fills the hero section */
+main .section.hero-full .video {
+  width: 100%;
 }
 
 main .section[data-text-alignment="left"] > div {
