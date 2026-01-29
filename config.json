@@ -5,25 +5,21 @@
       "headers": {
         "cs": {
           "AC-View-ID": "426ffe32-e0a9-4c53-8ec9-3f7118cbf6b2",
-          "AC-Price-Book-ID": "wknd_global",
-          "AC-Source-Locale": "en-US"
+          "AC-Price-Book-ID": "wknd_global"
         }
       },
+      "commerce-b2b-enabled": false,
+      "commerce-companies-enabled": false,
       "commerce-assets-enabled": false,
       "analytics": {
-        "base-currency-code": "YOUR_BASE_CURRENCY_CODE",
+        "base-currency-code": "USD",
         "environment": "Testing",
-        "environment-id": "FG9HiUc9tzWE1V1ueDfxrH",
-        "store-code": "STORE_CODE",
-        "store-id": "YOUR_STORE_ID",
-        "store-name": "YOUR_STORE_NAME",
-        "store-url": "YOUR_STORE_URL",
-        "store-view-code": "YOUR_AC-Source-Locale_HEADER_VALUE",
-        "store-view-id": "YOUR_STORE_VIEW_ID",
-        "store-view-name": "YOUR_STORE_VIEW_NAME",
-        "website-code": "WEBSITE_CODE",
-        "website-id": "YOUR_WEBSITE_ID",
-        "website-name": "YOUR_WEBSITE_NAME"
+        "environment-id": "NZwP3wKPFXBCTLGqxYWZne",
+        "locale": "{{LOCALE}}",
+        "store-url": "{{STORE_URL}}",
+        "store-view-currency-code": "{{CURRENCY_CODE}}",
+        "storefront-template": "{{TEMPLATE_TYPE}}",
+        "view-id": "wknd_global"
       },
       "plugins": {
         "picker": {
