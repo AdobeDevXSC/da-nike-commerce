@@ -789,7 +789,7 @@ li
 
 
 /* transparent desktop header */
-@media (width >= 900px) {
+/* @media (width >= 900px) {
   header.transparent-header-desktop {
     position: absolute;
     top: 0;
@@ -840,4 +840,4 @@ li
   header.transparent-header-desktop:hover nav .nav-tools .nav-tools-wrapper > button {
     filter: unset;
   }
-}
+} */
