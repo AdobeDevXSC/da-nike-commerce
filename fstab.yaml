@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: https://content.da.live/adobedevxsc/da-signet-jewelers/
+    url: https://content.da.live/adobedevxsc/da-nike-commerce/
     type: markup
 
 folders:
