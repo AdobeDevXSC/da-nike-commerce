@@ -27,7 +27,18 @@
 }
 
 .cards .cards-card-body {
-  margin: var(--spacing-small);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.cards .cards-card-body a {
+  border-radius: 30px;
+  padding: 7px 14px;
+  background: #fff;
+  color: #000 !important;
+  text-decoration: none;
+  border: 1px solid #ccc;
 }
 
 .cards .cards-card-body a.button {
@@ -48,9 +59,15 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  /* aspect-ratio: 4 / 3; */
   object-fit: cover;
   min-height: 340px;
+  max-height: 612px;
+  height: 100%;
+}
+
+.cards > ul > li a {
+  position: relative;
 }
 
 .cards > ul > li a:hover {
@@ -61,6 +78,10 @@
 @media (width >= 768px) {
   .cards > ul {
     grid-auto-columns: 32%;
+  }
+
+  .cards .cards-card-body {
+    padding: 4rem;
   }
 }
 
