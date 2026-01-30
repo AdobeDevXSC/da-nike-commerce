@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.columns p {
+  margin: 0;
+}
+
 .columns > div > div {
   order: 1;
 }
@@ -27,11 +31,27 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
+    /* gap: 24px; */
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
   }
+}
+
+/* multi col */
+.columns > div > .columns-multi-col {
+  position: relative;
+  padding: 0 !important;
+}
+
+.columns > div > .columns-multi-col > .content-wrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 4rem;
+}
+
+.columns > div > .columns-multi-col img {
+  object-fit: contain;
 }
