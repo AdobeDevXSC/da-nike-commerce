@@ -192,6 +192,9 @@ header nav .nav-sections ul > li,
 header nav .nav-sections ul > li > a {
   font: var(--type-body-2-strong-font);
   letter-spacing: var(--type-body-2-strong-letter-spacing);
+  font-weight: 700;
+  color: #000;
+  font-size: 14px;
 }
 
 header nav .nav-brand a:hover {
@@ -203,7 +206,7 @@ header nav .nav-sections ul > li ul {
 }
 
 header nav .nav-sections ul > li ul > li {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 header nav .nav-sections ul > li:empty {
@@ -248,6 +251,10 @@ header nav .nav-sections ul > li:empty {
     position: relative;
   }
 
+  header nav .nav-sections .nav-drop:hover {
+    cursor: pointer;
+  }
+
   header nav .nav-sections .nav-drop[aria-expanded='true'] ul {
     flex-flow: row wrap;
     max-height: calc(var(--desktop-panel-max-height) - 2 * var(--spacing-xbig));
@@ -265,11 +272,10 @@ header nav .nav-sections ul > li:empty {
     max-height: var(--desktop-panel-max-height);
     /* min-height: var(--desktop-panel-min-height); */
     /* padding: var(--spacing-xbig); */
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     position: absolute;
-    top: var(--spacing-large);
+    top: var(--nav-height);
     width: 100%;
-    border: 1px solid var(--color-neutral-300)
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li .submenu-header {
@@ -289,7 +295,7 @@ header nav .nav-sections ul > li:empty {
     width: var(--desktop-large-panel-width);
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 4rem;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li ul::before {
