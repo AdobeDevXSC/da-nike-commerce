@@ -44,7 +44,7 @@ export default async function decorate(block) {
     promosData.sort((a, b) => Number(a.row) - Number(b.row));
   } catch (e) {
     console.error('Failed to fetch promo JSON:', e);
-    return;
+    //return;
   }
 
   try {
@@ -53,7 +53,7 @@ export default async function decorate(block) {
     bannersData = resJson.data;
   } catch (e) {
     console.error('Failed to fetch banner JSON:', e);
-    return;
+    //return;
   }
 
   const fragment = document.createRange().createContextualFragment(`

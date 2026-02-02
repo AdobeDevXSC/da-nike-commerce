@@ -1,7 +1,7 @@
 {
   "public": {
     "default": {
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/NZwP3wKPFXBCTLGqxYWZne/graphql",
+     "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/NZwP3wKPFXBCTLGqxYWZne/graphql",
       "headers": {
         "cs": {
           "AC-View-ID": "426ffe32-e0a9-4c53-8ec9-3f7118cbf6b2",
