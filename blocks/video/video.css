@@ -20,7 +20,7 @@
 
 .video[data-embed-loaded='false']:not(.placeholder) {
   /* Reserve space for viewport-height hero */
-  min-height: 100vh;
+  min-height: 750px;
 }
 
 .video > div {
