@@ -355,7 +355,7 @@
     "fields": [
       {
         "component": "text",
-        "name": "video-url",
+        "name": "videoUrl",
         "label": "Dynamic Video URL",
         "valueType": "string",
         "required": true
