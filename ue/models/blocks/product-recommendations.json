@@ -3,9 +3,10 @@
     {
       "title": "Product Recommendations",
       "id": "product-recommendations",
+      "model": "product-recommendations",
       "plugins": {
         "da": {
-          "unsafeHTML": "<div class=\"product-recommendations\"><div><div>recId</div><div></div></div><div><div>currentSku</div><div></div></div></div>"
+          "type": "key-value-block"
         }
       }
     }
@@ -16,18 +17,14 @@
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
-          "name": "div:nth-child(1)>div:nth-child(2)>p:nth-child(1)",
-          "label": "recID",
-          "value": "",
+          "name": "recId",
+          "label": "Rec ID",
           "required": true
         },
         {
           "component": "text",
-          "valueType": "string",
-          "name": "div:nth-child(2)>div:nth-child(2)>p:nth-child(1)",
-          "label": "currentSku",
-          "value": ""
+          "name": "currentSku",
+          "label": "Current SKU"
         }
       ]
     }
