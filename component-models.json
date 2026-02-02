@@ -355,14 +355,14 @@
     "fields": [
       {
         "component": "text",
-        "name": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]",
+        "name": "video-url",
         "label": "Dynamic Video URL",
         "valueType": "string",
         "required": true
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
