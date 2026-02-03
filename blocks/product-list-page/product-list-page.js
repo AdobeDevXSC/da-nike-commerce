@@ -74,8 +74,8 @@ export default async function decorate(block) {
   const $productList = fragment.querySelector('.search__product-list');
   const $pagination = fragment.querySelector('.search__pagination');
 
-  useZoomViewer = block.querySelector('div:nth-child(3)>div:nth-child(2)>p:nth-child(1)')?.textContent || 'false';
-  useProductBadges = block.querySelector('div:nth-child(4)>div:nth-child(2)>p:nth-child(1)')?.textContent || 'false';
+  useZoomViewer = config.zoom || 'false';
+  useProductBadges = config.badges || 'false';
 
   //block.innerHTML = '';
   block.appendChild(fragment);
@@ -188,6 +188,9 @@ export default async function decorate(block) {
 
   // Listen for search results (before render)
   events.on('search/result', (payload) => {
+    console.log("payload: ",payload)
+
+
     const totalCount = payload.result?.totalCount || 0;
     block.classList.toggle('product-list-page--empty', totalCount === 0);
 
