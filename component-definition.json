@@ -276,7 +276,7 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 1,
+              "columns": 2,
               "fields": [
                 {
                   "name": "category",
