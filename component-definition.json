@@ -243,9 +243,29 @@
         {
           "title": "Media Promo Banner",
           "id": "media-promo-banner",
+          "model": "media-promo-banner",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"media-promo-banner\"><div><div><p><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></p><h3 id=\"title\">Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p><a href=\"#\" title=\"CTA Button\">CTA Button</a></p></div></div></div>"
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]"
+                },
+                {
+                  "name": "description",
+                  "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "urlLink",
+                  "selector": "div:nth-child(3)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]"
+                }
+              ]
             }
           }
         },

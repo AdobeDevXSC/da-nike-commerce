@@ -223,27 +223,27 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+        "name": "image",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+        "name": "alt",
         "label": "Alt",
         "value": ""
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "description",
         "value": "",
         "label": "Description",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "div:nth-child(3)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]",
+        "name": "urlLink",
         "value": "",
         "label": "URL Link",
         "valueType": "string"
