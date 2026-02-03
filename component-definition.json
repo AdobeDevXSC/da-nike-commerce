@@ -243,6 +243,7 @@
         {
           "title": "Media Promo Banner",
           "id": "media-promo-banner",
+          "model": "media-promo-banner",
           "plugins": {
             "da": {
               "rows": 4,
@@ -271,10 +272,11 @@
         {
           "title": "Product List Page",
           "id": "product-list-page",
+          "model": "product-list-page",
           "plugins": {
             "da": {
-              "rows": 3,
-              "columns": 2,
+              "rows": 1,
+              "columns": 1,
               "fields": [
                 {
                   "name": "category",
