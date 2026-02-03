@@ -7,7 +7,7 @@
       "plugins": {
         "da": {
           "rows": 1,
-          "columns": 2,
+          "columns": 1,
           "fields": [
             { "name": "category", "selector": "div:nth-child(1)>div:nth-child(2)>p:nth-child(1)" },
             { "name": "searchTerm", "selector": "div:nth-child(2)>div:nth-child(2)>p:nth-child(1)" },
@@ -26,15 +26,13 @@
           "component": "text",
           "valueType": "string",
           "name": "category",
-          "label": "Category",
-          "value": ""
+          "label": "Category"
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "searchTerm",
-          "label": "Search Term",
-          "value": ""
+          "label": "Search Term"
         },
         {
           "component": "boolean",

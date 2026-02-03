@@ -257,15 +257,13 @@
         "component": "text",
         "valueType": "string",
         "name": "category",
-        "label": "Category",
-        "value": ""
+        "label": "Category"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "searchTerm",
-        "label": "Search Term",
-        "value": ""
+        "label": "Search Term"
       },
       {
         "component": "boolean",
