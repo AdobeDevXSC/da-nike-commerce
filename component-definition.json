@@ -273,8 +273,8 @@
           "id": "product-list-page",
           "plugins": {
             "da": {
-              "rows": 3,
-              "columns": 2,
+              "rows": 1,
+              "columns": 1,
               "fields": [
                 {
                   "name": "category",

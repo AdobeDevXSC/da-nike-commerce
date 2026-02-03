@@ -5,8 +5,8 @@
       "id": "product-list-page",
       "plugins": {
         "da": {
-          "rows": 3,
-          "columns": 2,
+          "rows": 1,
+          "columns": 1,
           "fields": [
             { "name": "category", "selector": "div:nth-child(1)>div:nth-child(2)>p:nth-child(1)" },
             { "name": "zoom on hover", "selector": "div:nth-child(2)>div:nth-child(2)>p:nth-child(1)" },
