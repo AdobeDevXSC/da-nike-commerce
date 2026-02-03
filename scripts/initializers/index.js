@@ -16,8 +16,16 @@ const setAuthHeaders = (state) => {
   }
 };
 
-const setCustomerGroupHeader = (customerGroupId) => {
-  CS_FETCH_GRAPHQL.setFetchGraphQlHeader('Magento-Customer-Group', customerGroupId);
+// const setCustomerGroupHeader = (customerGroupId) => {
+//   CS_FETCH_GRAPHQL.setFetchGraphQlHeader('Magento-Customer-Group', customerGroupId);
+// };
+
+const setAdobeCommerceOptimizerHeader = (adobeCommerceOptimizer) => {
+  if (adobeCommerceOptimizer?.priceBookId) {
+    CS_FETCH_GRAPHQL.setFetchGraphQlHeader('AC-Price-Book-ID', adobeCommerceOptimizer.priceBookId);
+  } else {
+    CS_FETCH_GRAPHQL.removeFetchGraphQlHeader('AC-Price-Book-ID');
+  }
 };
 
 const persistCartDataInSession = (data) => {
@@ -45,7 +53,8 @@ const setupAemAssetsImageParams = () => {
 export default async function initializeDropins() {
   const init = async () => {
     // Set Customer-Group-ID header
-    events.on('auth/group-uid', setCustomerGroupHeader, { eager: true });
+    //events.on('auth/group-uid', setCustomerGroupHeader, { eager: true });
+    events.on('auth/adobe-commerce-optimizer', setAdobeCommerceOptimizerHeader, { eager: true });
 
     // Set auth headers on authenticated event
     events.on('authenticated', setAuthHeaders, { eager: true });
@@ -68,20 +77,26 @@ export default async function initializeDropins() {
     await fetchPlaceholders('placeholders/global.json');
 
     // Initialize Global Drop-ins
+    // NOTE: Adobe Commerce API sandbox only supports Catalog Service queries.
+    // The following drop-ins require Core Magento GraphQL and are disabled:
+    
+    // Disabled: requires Core Magento GraphQL (generateCustomerToken, etc.)
     await import('./auth.js');
 
-    await import('./personalization.js');
+    // Disabled: requires Core Magento GraphQL (storeConfig query)
+    // await import('./personalization.js');
 
-    import('./cart.js');
+    // Disabled: requires Core Magento GraphQL (cart mutations)
+    // import('./cart.js');
 
-    events.on('aem/lcp', async () => {
-      // Recaptcha
-      await import('@dropins/tools/recaptcha.js').then((recaptcha) => {
-        recaptcha.setEndpoint(CORE_FETCH_GRAPHQL);
-        recaptcha.enableLogger(true);
-        return recaptcha.setConfig();
-      });
-    });
+    // Disabled: requires Core Magento GraphQL (recaptchaV3Config)
+    // events.on('aem/lcp', async () => {
+    //   await import('@dropins/tools/recaptcha.js').then((recaptcha) => {
+    //     recaptcha.setEndpoint(CORE_FETCH_GRAPHQL);
+    //     recaptcha.enableLogger(true);
+    //     return recaptcha.setConfig();
+    //   });
+    // });
   };
 
   // re-initialize on prerendering changes
