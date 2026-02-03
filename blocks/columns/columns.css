@@ -55,3 +55,14 @@
 .columns > div > .columns-multi-col img {
   object-fit: contain;
 }
+
+/* ue override */
+.columns[data-aue-component="columns"] > div > div.columns-img-col > p {
+  position: relative;
+}
+
+.columns[data-aue-component="columns"] > div > div.columns-img-col > p > div.richtext {
+  position: absolute;
+  bottom: 0;
+  padding: 4rem;
+}
