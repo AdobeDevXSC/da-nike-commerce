@@ -188,9 +188,6 @@ export default async function decorate(block) {
 
   // Listen for search results (before render)
   events.on('search/result', (payload) => {
-    console.log("payload: ",payload)
-
-
     const totalCount = payload.result?.totalCount || 0;
     block.classList.toggle('product-list-page--empty', totalCount === 0);
 
