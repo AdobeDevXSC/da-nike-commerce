@@ -262,13 +262,13 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "searchTerm",
+        "name": "searchterm",
         "label": "Search Term"
       },
       {
         "component": "boolean",
         "label": "Zoom Product Image on Hover",
-        "name": "zoomOnHover",
+        "name": "zoom",
         "valueType": "boolean"
       },
       {
