@@ -16,5 +16,8 @@ await initializeDropin(async () => {
   };
 
   // Initialize auth
-  return initializers.mountImmediately(initialize, { langDefinitions });
+  return initializers.mountImmediately(initialize, { 
+    langDefinitions,
+    adobeCommerceOptimizer: true // Enable ACO
+   });
 })();
