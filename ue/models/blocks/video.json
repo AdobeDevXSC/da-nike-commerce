@@ -10,7 +10,7 @@
           "rows": 1,
           "columns": 1,
           "fields": [
-            { "name": "videoUrl", "selector": "div:nth-child(1)>div:nth-child(1)>a:nth-child(1)[href]" },
+            { "name": "videoUrl", "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]" },
             { "name": "text", "selector": "div:nth-child(2)" }
           ]
         }
