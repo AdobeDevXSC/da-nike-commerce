@@ -263,7 +263,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "searchTerm",
+        "name": "searchterm",
         "label": "Search Term",
         "value": ""
       }
