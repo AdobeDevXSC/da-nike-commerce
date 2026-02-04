@@ -263,21 +263,9 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "searchterm",
+        "name": "searchTerm",
         "label": "Search Term",
         "value": ""
-      },
-      {
-        "component": "boolean",
-        "label": "Zoom Product Image on Hover",
-        "name": "zoom",
-        "valueType": "boolean"
-      },
-      {
-        "component": "boolean",
-        "label": "Use Product Badges",
-        "name": "badges",
-        "valueType": "boolean"
       }
     ]
   },
