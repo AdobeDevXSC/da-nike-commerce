@@ -27,26 +27,28 @@
           "valueType": "string", 
           "name": "category",
           "label": "Category",
-          "value": ""
+          "value": "category"
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "searchterm",
           "label": "Search Term",
-          "value": ""
+          "value": "searchterm"
         },
         {
           "component": "boolean",
           "label": "Zoom Product Image on Hover",
           "name": "zoom",
-          "valueType": "boolean"
+          "valueType": "boolean",
+          "value": "zoom"
         },
         {
           "component": "boolean",
           "label": "Use Product Badges",
           "name": "badges",
-          "valueType": "boolean"
+          "valueType": "boolean",
+          "value": "badges"
         }
       ]
     }
