@@ -24,15 +24,17 @@
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
+          "valueType": "string", 
           "name": "category",
-          "label": "Category"
+          "label": "Category",
+          "value": ""
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "searchterm",
-          "label": "Search Term"
+          "label": "Search Term",
+          "value": ""
         },
         {
           "component": "boolean",
