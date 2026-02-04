@@ -277,6 +277,7 @@
             "da": {
               "rows": 4,
               "columns": 2,
+              "type": "key-value-block",
               "fields": [
                 {
                   "name": "category",
