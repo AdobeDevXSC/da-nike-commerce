@@ -258,28 +258,26 @@
         "valueType": "string",
         "name": "category",
         "label": "Category",
-        "value": "category"
+        "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "searchterm",
         "label": "Search Term",
-        "value": "searchterm"
+        "value": ""
       },
       {
         "component": "boolean",
         "label": "Zoom Product Image on Hover",
         "name": "zoom",
-        "valueType": "boolean",
-        "value": "zoom"
+        "valueType": "boolean"
       },
       {
         "component": "boolean",
         "label": "Use Product Badges",
         "name": "badges",
-        "valueType": "boolean",
-        "value": "badges"
+        "valueType": "boolean"
       }
     ]
   },
