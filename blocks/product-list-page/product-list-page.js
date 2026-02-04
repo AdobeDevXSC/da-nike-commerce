@@ -102,7 +102,7 @@ export default async function decorate(block) {
     }).catch(() => console.error('Error searching for products'));
   } else {
     await search({
-      phrase: q || config.searchTerm || '',
+      phrase: q || config.searchterm || '',
       currentPage: page ? Number(page) : 1,
       pageSize: 8,
       sort: getSortFromParams(sort),
