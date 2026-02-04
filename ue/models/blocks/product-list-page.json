@@ -6,8 +6,8 @@
       "model": "product-list-page",
       "plugins": {
         "da": {
-          "rows": 1,
-          "columns": 1,
+          "rows": 4,
+          "columns": 2,
           "fields": [
             { "name": "category", "selector": "div:nth-child(1)>div:nth-child(2)>p:nth-child(1)" },
             { "name": "searchterm", "selector": "div:nth-child(2)>div:nth-child(2)>p:nth-child(1)" },

@@ -275,8 +275,8 @@
           "model": "product-list-page",
           "plugins": {
             "da": {
-              "rows": 1,
-              "columns": 1,
+              "rows": 4,
+              "columns": 2,
               "fields": [
                 {
                   "name": "category",
