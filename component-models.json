@@ -285,29 +285,29 @@
         "component": "text",
         "valueType": "string",
         "name": "category-label",
-        "label": "Category",
-        "value": "category"
+        "label": "Category Label",
+        "value": "category-label"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "searchterm-label",
-        "label": "Search Term",
-        "value": "searchterm"
+        "label": "Search Term Label",
+        "value": "searchterm-label"
       },
       {
         "component": "boolean",
-        "label": "Zoom Product Image on Hover",
+        "label": "Zoom Product Image on Hover Label",
         "name": "zoom-label",
         "valueType": "boolean",
-        "value": "zoom"
+        "value": "zoom-label"
       },
       {
         "component": "boolean",
-        "label": "Use Product Badges",
+        "label": "Use Product Badges Label",
         "name": "badges-label",
         "valueType": "boolean",
-        "value": "badges"
+        "value": "badges-label"
       }
     ]
   },
